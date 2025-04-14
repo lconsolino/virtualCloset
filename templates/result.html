@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="block1" style="position:fixed;top:4vw;">
+        <h1> {{ data['productDisplayName'] }} </h1>
+        <h3>articleType: {{ data['articleType'] }}</h3>
+        <h3>baseColour: {{ data['baseColour'] }}</h3>
+        <h3>gender: {{ data['gender'] }}</h3>
+        <h3>masterCategory: {{ data['masterCategory'] }}</h3>
+        <h3>season: {{ data['season'] }}</h3>
+        <h3>subCategory: {{ data['subCategory'] }}</h3>
+        <h3>usage: {{data['usage'] }}</h3>
+        <h3>year: {{ data['year'] }}</h3>
+        <h3 style="position:fixed; top: 10vw; left: 60%;"> <img src="{{ url_for('static', filename=data['id'] + '.jpg') }}" width="300vw"> </h3>
+        <br><br><br><br>
+        <!-- how do i get this to point back at search results -->
+        <a href="/" target="_self" style="position:fixed; right:10vw; top:5vw; text-decoration: None; color:rgb(99,70,127);"  >
+                <h3> back to search </h3>
+                </a>
+
+</div>
+{% endblock  %}
