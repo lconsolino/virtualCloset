@@ -32,11 +32,12 @@ def result(id):
     return render_template('result.html',data=item)
 
 @app.route('/search/<id>')
-def search(keyword):
-    response = clothing.findResult(keyword)
+def search(id):
+    response = clothing.getKeywordItems(id)
     pprint (response)
     if(response != None):
             return render_template('searchResult.html', data=response)
+    return render_template('test.html',data= None)
 # @app.route("/item" )
 # def item():
 #         category = request.args.get('key')

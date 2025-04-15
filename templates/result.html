@@ -10,10 +10,11 @@
         <h3>subCategory: {{ data['subCategory'] }}</h3>
         <h3>usage: {{data['usage'] }}</h3>
         <h3>year: {{ data['year'] }}</h3>
-        <h3 style="position:fixed; top: 10vw; left: 60%;"> <img src="{{ url_for('static', filename=data['id'] + '.jpg') }}" width="300vw"> </h3>
+        <h3>year: {{ data['id'] }}</h3>
+        <h3 style="position:fixed; top: 10vw; left: 60%;"> <img src="https://myvirtualcloset.s3.us-east-2.amazonaws.com/static/{{data['id']}}.jpg" width="300vw"> </h3>
         <br><br><br><br>
         <!-- how do i get this to point back at search results -->
-        <a href="/" target="_self" style="position:fixed; right:10vw; top:5vw; text-decoration: None; color:rgb(99,70,127);"  >
+        <a href="/search/{{data['id']}}" target="_self" style="position:fixed; right:10vw; top:5vw; text-decoration: None; color:rgb(99,70,127);"  >
                 <h3> back to search </h3>
                 </a>
 

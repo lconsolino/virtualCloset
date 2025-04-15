@@ -5,7 +5,7 @@
 </head>
 <body >
     <br>
-    <h1>Search Results</h1>
+    <h1>Suggested Pieces</h1>
     <br>
     <br>
 
@@ -13,13 +13,13 @@
         <ul style="list-style-type: None; text-indent: 5em; padding-left: 5em; margin-bottom: 1rem; ">
         {% for item in data %}
             <li style="text-indent: 0em; padding-left: 0;">
-                <a href="result/{{item['id']}}" target="_self" style=" text-decoration: None;color:rgb(99,70,127);">
+                <a href="/result/{{item['id']}}" target="_self" style=" text-decoration: None;color:rgb(99,70,127);">
                     <strong>{{ item['productDisplayName'] }}</strong><br>
                 </a>
                 Category: {{ item['subCategory'] }}<br>
                 Color: {{ item['baseColour'] }}<br>
                 Year: {{ item['year'] }}<br>
-                <h3 > <img src="{{ url_for('static', filename=item['id'] + '.jpg') }}" width="300vw"> </h3>
+                <!-- <h3 > <img src="https://myvirtualcloset.s3.us-east-2.amazonaws.com/static/{{item['id']}}.jpg" width="300vw"> </h3> -->
             </li>
             <br>
             <br>
