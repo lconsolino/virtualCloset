@@ -61,16 +61,10 @@ class clothingManager(object):
         results = []
         for category in self.headers:
             for keyword in self.dictionaryArr[1:]:
-                if input.lower() in keyword[category].lower():
+                if (" " + input.lower() + " ") in keyword[category].lower():
                     pprint(keyword[category])
                     results.append(keyword)
                     # return keyword
-            # if item == input:
-            #     for object in self.dictionaryArr[1:]:
-            #         pprint(object[input])
-            #         if object[input] == input:
-            #             pprint(object[input] )
-            #             return object
         return results
     def getKeywordItems(self,inputID):
         results=[]
