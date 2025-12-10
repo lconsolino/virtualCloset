@@ -1,0 +1,23 @@
+﻿Final Project
+Solo Team: Lizzie Consolino
+Steps
+1. Ssh into RPI
+2. Clone project files from git to rpi
+3. Initiate server side of api [python3 app.py] 
+Or 
+1.initiate server on terminal side python3 app.py
+4. Open terminal on laptop and create client with c python3 client.py -a [rpi addr]:5000 -u lizzie 
+5.Open browser and open flask server with http 
+6. Type in search command on terminal when prompted, pick category from CSV column titles and type in capitalized value 
+        Ex. ‘gender’ ‘Women’
+7. See html formatted result [ the first item that has that given value in its category] 
+
+
+Sources
+Understanding And Using REST APIs — Smashing Magazine 
+https://pythonspot.com/flask-web-app-with-python/        [ modified their html templates bc html not a course objective]
+Lab04 [ based code on outline mailbox manager, server, client, and tools]
+https://flask.palletsprojects.com/en/stable/tutorial/ 
+Upload and Display Images On the Frontend Using Python Flask
+HTML Styles
+public-apis/public-apis: A collective list of free APIs
